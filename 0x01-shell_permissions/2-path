@@ -1,2 +1,2 @@
 #!/bin/bash
-nano /action
+source /action
