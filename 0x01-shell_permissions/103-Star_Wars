@@ -1,2 +1,2 @@
 #!/bin/bash
-xdg-open 'https://starwars.fandom.com/wiki/Star_Wars:_Episode_IV_A_New_Hope'
+echo StarWars IV
