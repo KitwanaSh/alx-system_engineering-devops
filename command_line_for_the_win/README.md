@@ -30,7 +30,9 @@ __It is your responsibility to request a review for this project from a peer. If
 <hr>
 __Repo__:
 - GitHub repository: `alx-system_engineering-devops`
+<br>
 - Directory: `command_line_for_the_win`
+<br>
 - File: `0-first_9_tasks.jpg,0-first_9_tasks.png`
    </td>
   </tr>
@@ -51,7 +53,9 @@ __Repo__:
 <hr>
 __Repo__:
 - GitHub repository: `alx-system_engineering-devops`
+<br>
 - Directory: `command_line_for_the_win`
+<br>
 - File: `1-next_9_tasks.jpg,1-next_9_tasks.png`
    </td>
   </tr>
@@ -72,7 +76,9 @@ __Repo__:
 <hr>
 __Repo__:
 - GitHub repository: `alx-system_engineering-devops`
+<br>
 - Directory: `command_line_for_the_win`
+<br>
 - File: `2-next_9_tasks.jpg,2-next_9_tasks.png`
    </td>
   </tr>
