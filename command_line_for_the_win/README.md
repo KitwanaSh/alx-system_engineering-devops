@@ -26,14 +26,11 @@ __It is your responsibility to request a review for this project from a peer. If
  <tbody>
   <tr>
    <td>
-<p>Complete the first 9 tasks </p>
+Complete the first 9 tasks
 <hr>
 __Repo__:
-
-- GitHub repository: `alx-system_engineering-devops`                                                                                        .
-
+- GitHub repository: `alx-system_engineering-devops`
 - Directory: `command_line_for_the_win`
-
 - File: `0-first_9_tasks.jpg,0-first_9_tasks.png`
    </td>
   </tr>
@@ -50,14 +47,11 @@ __Repo__:
  <tbody>
   <tr>
    <td>
-<p>Complete the 9 next tasks, getting to 18 total.</p>
+Complete the 9 next tasks, getting to 18 total.
 <hr>
 __Repo__:
-
-- GitHub repository: `alx-system_engineering-devops`                                                                                      .
-
+- GitHub repository: `alx-system_engineering-devops`
 - Directory: `command_line_for_the_win`
-
 - File: `1-next_9_tasks.jpg,1-next_9_tasks.png`
    </td>
   </tr>
@@ -74,14 +68,11 @@ __Repo__:
  <tbody>
   <tr>
    <td>
-<p> Complete the 9 next tasks, getting to 27 total</p>
+Complete the 9 next tasks, getting to 27 total
 <hr>
 __Repo__:
-
 - GitHub repository: `alx-system_engineering-devops`
-
-- Directory: `command_line_for_the_win`                                                                                                      .
-
+- Directory: `command_line_for_the_win`
 - File: `2-next_9_tasks.jpg,2-next_9_tasks.png`
    </td>
   </tr>
