@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script displays the list of files in the currect directory
+# By specifying a certain condition
+
+l=$(ls)
+for file in $l
+do
+	find "$file" | cut -d- -f2
+done
