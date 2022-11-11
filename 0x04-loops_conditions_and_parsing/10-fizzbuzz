@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script display numbers form 1 to 100
+#+ mutpliple of 5 and 3: Fizzbuzz
+#+ multiple of 5 Buzz
+#+ multiple of 3 Fizz
+number=1
+while [ $number -le 100 ]
+do
+	if [ $(( number % 3)) -eq 0 ] && [ $(( number % 5)) -eq 0 ]
+	then
+		echo "FizzBuzz"
+	elif [ $(( number % 3)) -eq 0 ]
+	then
+		echo "Fizz"
+	elif [ $(( number % 5)) -eq 0 ]
+	then
+		echo "Buzz"
+	else
+		echo $number
+	fi
+	number=$(( number + 1))
+done
