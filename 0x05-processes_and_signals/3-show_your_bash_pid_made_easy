@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This script display the pid for the bash and script
-# The pid made easy contest
+# The pid made easy contest, the word bash
 
 pgrep -l bash
