@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script kill the invisible processes
+
+pkill -SIGKILL "7-highlander"
