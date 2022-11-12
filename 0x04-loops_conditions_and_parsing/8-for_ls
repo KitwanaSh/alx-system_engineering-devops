@@ -2,8 +2,10 @@
 # This script displays the list of files in the currect directory
 # By specifying a certain condition
 
-l=$(ls)
-for file in $l
+
+for lst in *
 do
-	find "$file" | cut -d- -f2
+
+	echo "$lst" | cut -d'-' -f2
+
 done
