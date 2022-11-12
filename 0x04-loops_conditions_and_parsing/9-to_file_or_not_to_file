@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This script checks the existance and properties of a file
 # the file were are checking is 'school'
+
 thefile="School"
 if [ -e $thefile ]
 then
