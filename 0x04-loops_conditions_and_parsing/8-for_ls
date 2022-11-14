@@ -6,6 +6,6 @@
 for lst in *
 do
 
-	echo "$lst" | cut -d'-' -f2
+	echo "$lst" | cut -d '-' -f2
 
 done
