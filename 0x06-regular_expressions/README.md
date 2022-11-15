@@ -65,7 +65,7 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
  <tbody>
   <tr>
    <td>
-![alt_image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/ec65557f0da1fbfbff6659413885e4d4822f5b1d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221115T095229Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d727958930b4b14492dedd3b72d60a8b1db577e32e507496291a4d621f05b09c)
+![alt_image]('https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/ec65557f0da1fbfbff6659413885e4d4822f5b1d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221115T095229Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d727958930b4b14492dedd3b72d60a8b1db577e32e507496291a4d621f05b09c')
 
 Requirements:
 
