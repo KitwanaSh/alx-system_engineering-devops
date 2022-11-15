@@ -65,7 +65,7 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
  <tbody>
   <tr>
    <td>
-![alt_image]('https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/ec65557f0da1fbfbff6659413885e4d4822f5b1d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221115T095229Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d727958930b4b14492dedd3b72d60a8b1db577e32e507496291a4d621f05b09c')
+![alt-image]('https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/ec65557f0da1fbfbff6659413885e4d4822f5b1d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221115T095229Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d727958930b4b14492dedd3b72d60a8b1db577e32e507496291a4d621f05b09c')
 
 Requirements:
 
@@ -93,3 +93,101 @@ __Repo__:
  </tbody>
 </table>
 
+<table>
+ <thead>
+  <tr>
+   <th> 1. Repetition token #0</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>
+![img](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/e7db3c377d46453588fc84f3a975661d142fee91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221115T095229Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=791f17a06b8c9f5c7db220612999bd40b0eda075e4f05caac1ff32e6e6d24ce9)
+
+Requirements:
+
+- Find the regular expression that will match the above cases
+- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+__Repo__:
+
+- GitHub repository: `alx-system_engineering-devops`
+- Directory: `0x06-regular_expressions`
+- File: `1-repetition_token_0.rb`
+   </td>
+  </tr>
+ </tbody>
+</table>
+
+<table>
+ <thead>
+  <tr>
+   <th>2. Repetion token #1</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>
+![img](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/c59ff11db195d5cf17d1790a5141ae2f234786d2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221115T095229Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1ac56e482ad2ddf92c89d377618c25a01b39fbd164d8696c346ec8ed6683da5d)
+
+Requirements:
+
+- Find the regular expression that will match the above cases
+- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+__Repo__:
+
+- GitHub repository: `alx-system_engineering-devops`
+- Directory: `0x06-regular_expressions`
+- File: `2-repetition_token_1.rb`
+   </td>
+  </tr>
+ </tbody>
+</table>
+
+<table>
+ <thead>
+  <tr>
+   <th> 3. Repetition token #2</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>
+![img](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3b6bf4aeca6a0c2de584e7f5d68d11eef57ce205.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20221115%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221115T095229Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3fcc51b903bd4eff6bcc949584d6fcfed7af0f4dcee59301e86094fed990b052)
+
+Requirements:
+
+- Find the regular expression that will match the above cases
+- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+__Repo__:
+
+- GitHub repository: `alx-system_engineering-devops`
+- Directory: `0x06-regular_expressions`
+- File: `3-repetition_token_2.rb`
+   </td>
+  </tr>
+ </tbody>
+</table>
+
+<table>
+ <thead>
+  <tr>
+   <th>4. Repetition token #3 </th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>
+Requirements:
+
+- Find the regular expression that will match the above cases
+- Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method
+- Your regex should not contain square brackets
+__Repo__:
+
+- GitHub repository: `alx-system_engineering-devops`
+- Directory: `0x06-regular_expressions`
+- File: `4-repetition_token_3.rb`
+   </td>
+  </tr>
+ </tbody>
+</table>
