@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# creates the RSA keypair with the na school
+ssh-keygen -b 4096 -f school -N betty
