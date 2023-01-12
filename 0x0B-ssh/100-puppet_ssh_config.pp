@@ -1,5 +1,6 @@
 #configure ssh config
 
+include stdlib
 file_line { 'No password':
     ensure             => present,
     path               => '/etc/ssh/ssh_config',
