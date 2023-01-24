@@ -33,10 +33,16 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend firstbalance
-        bind *:80
-        option forwardfor
-        default_backend webservers
+frontend www-http
+    bind   0.0.0.0:80
+    default_backend www-backend
+    redirect scheme https code 301 if !{ ssl_fc }
+
+frontend www-https
+    bind   0.0.0.0:443
+    acl    letsencrypt-acl path_beg /.well-known/acme-challenge/
+    use_backend letsencrypt-backend if letsencrypt-acl
+    default_backend www-backend
 
 backend www-backend
     balance  roundrobin
