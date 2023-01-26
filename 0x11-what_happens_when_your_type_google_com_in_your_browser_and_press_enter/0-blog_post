@@ -1,1 +1,50 @@
-https://www.linkedin.com/pulse/what-happens-when-you-type-googlecom-press-enter-kitwana-s-ezechiel
+What happens when you type google.com and Press enter ?
+
+nternet has become a basic solution in human lives today. When we want to look for something on the internet, it can be to purchase, to take an online course, to chat with friends, to ask for answer. What we basically do is to open up a browser (i.e. chrome, safari, Mozilla,...) and ask for the internet to give us the results we want. Have you ever wondered what processes are taken behind that scene. If you have the curiosity in mind then you are at the right place because i am just going to talk about that.
+First, I would like to tell you that this idea did not come from me, first hand. I was suggested this for the purpose of the study (Software Engineering Program) at ALX Africa as a project. However, I can ensure you that based on what we have been studying lately, what you will see in this blog is accurate and true.
+Okay, let's go into the main point of the subject that we are here for by breaking this question in different parts so you can understand clearly even though you may not be much familiar in computer and technology.
+
+Relationship between website pages, IP addresses and servers.
+Website pages are collections of files, often HTML, CSS, JavaScript, and images, that tell your browser how to display the site, images, and data. They need to be accessible to anyone from anywhere at anytime, so hosting them on your computer at home isn’t be scalable or reliable. A powerful external computer connected to the Internet, called a server, stores these files.
+When you point your browser at a URL (Uniform Resource Locator) like https://www.google.com, your browser will figure out which server on the Internet is hosting the site. It does this by looking up the domain, google.com, to find the address.
+Each device on the Internet — servers, cell phones, your smart refrigerator — all have a unique address called an IP address. An IP address contains four numbered parts from 0 to 255. Eg. 64.233.85.0
+But numbers like this are hard to remember! That’s where domain names come in. google.com is much easier to remember than 64.233.85.0, right? Imagine having to remember all the IP addresses of the websites you visit everyday. That could be hard.
+We do the same on the Internet. The domain name system, or DNS, is like the Contacts app on our phone. DNS helps our browser (and us) find servers on the Internet. We can do a DNS lookup to find the IP address of the server based on the domain name, google.
+Now that you know about the different parts and how they relate to one another, let’s look at each step of the process and how the browser communicates with the server when you type in goole.com. Whether you typed in google.com or clicked on a linked URL from the current page, the process is the same.
+1. You type google.com and press enter
+When you do this the browser, because it is connected to the internet will look for the address of that domain name and return its IP address. After returning its IP address, i will display the entire URL (Uniform Resource Locator) in the URL bar. This is how it will look like https://www.google.com/ because that is how the domain name service (DNS) understand the address.
+Let’s break down the parts of this URL you typed in to get here.
+https://www.google.com/ 
+Scheme
+https:// is the scheme. HTTPS stands for Hypertext Transfer Protocol Secure. This scheme tells the browser to make a connection to the server using Transport Layer Security, or TLS. TLS is an encryption protocol to secure communications over the Internet. With HTTPS, the data exchanged between your browser and the server, like passwords or credit card info, is encrypted. You may have also seen ftp://, mailto://, or file://. These are other protocols that browsers know how to handle.
+Domain
+google.com is the domain name of the site. It is the memorable address and points to a specific server’s IP address.
+Path
+Sometimes there is an additional path to the resource in the URL. For example, for this URL, https://www.google.com/the-path-to/say-hello, the-path-to is the path on the server to the requested resource, say-hello. You can think of this like the directory structure of files and other directories on your computer. It’s a way to organize your resources, whether they are static HTML, CSS, JavaScript, or image files, or dynamically generated content. Common examples of paths are blog, posts, tags, or images, each grouping different resources.
+Resource
+When you typed this URL into your browser, say-hello is the name of the resource on the website you want to view. Sometimes you’ll see this with a file extension like .html which indicates this is a static file on the server with HTML content. Without an extension, like this URL, it usually indicates the server generated this content. For instance, a news site would show you customized, up to date, and local news content, which it can only do when it knows who you are or where the request came from.
+2. Browser looks up the IP address for the domain
+After you’ve typed goole.com into your browser and pressed enter, the browser needs to figure out which server on the Internet to connect to. To do that, it needs to look up the IP address of the server hosting the website using google.com you typed in. It does this using a DNS lookup.
+Because DNS is complex and has to be blazingly fast, DNS data is cached at different layers between your browser and at various places across the Internet. Your browser checks its own cache, the operating system cache, a local network cache at your router, and a DNS server cache on your corporate network or at your internet service provider (ISP). If the browser cannot find the IP address at any of those cache layers, the DNS server on your corporate network or at your ISP does a recursive DNS lookup. A recursive DNS lookup asks multiple DNS servers around the Internet, which in turn ask more DNS servers for the DNS record until it is found.
+Once the browser gets the DNS record with the IP address, it’s time for it to find the server on the Internet and establish a connection.
+3. Browser initiates TCP connection with the server
+Using the public Internet routing infrastructure, packets from a client browser request get routed through the router, the ISP (Internet Service Provider), through an internet exchange to switch ISPs or networks, all using transmission control protocol, more commonly known as TCP, to find the server with the IP address to connect to. But this is a very roundabout way to get there and it’s not efficient.
+Once the browser finds the server on the Internet, it establishes a TCP connection with the server and if HTTPS is being used, a TLS (Transport Layer Security) handshake takes place to secure the communication.
+4. Browser sends the HTTP request to the server
+Now that the browser has a connection to the server, it follows the rules of communication for the HTTP(s) protocol. It starts with the browser sending an HTTP request to the server to request the contents of the page. The HTTP request contains a request line, headers (or metadata about the request), and a body. The request line contains information that the server can use to determine what the client (in this case, your browser) wants to do.
+Once the server has received the request from the client, the server processes it and sends back a response.
+5. Server processes request and sends back a response
+The server takes the request and based on the info in the request line, headers, and body, decides how to process the request. For the request, GET /say-hello/ HTTP/1.1, the server gets the content at this path, constructs the response and sends it back to the client. The response contains the following:
+a status line, telling the client the status of the request
+response headers, telling the browser how to handle the response
+the requested resource at that path, either content like HTML, CSS, JavaScript, or image files, or database.
+And upon receiving the request the server (usually a load balancer that directs traffic to all available server for that website) sends a response with the IP Address of the chosen server along with the SSL (Secure Sockets Layer) certificate to initiate a secure session (HTTPS).
+Resources can be static files, either text (i.e index.html) or non-text data (i.e. logo.img). Browsers aren’t always requesting static files, though. Often, these are dynamic resources generated at the time of the request and there is no file associated with the resource. In fact, in this request, that’s exactly what is happening. There is no file say-hello, but the server still knows how to process the request. The server generates a dynamic resource, building the HTML from fragments or templates and combining it with dynamic data to send back in the response, as text, so the browser can render the page.
+Now that you know how the server builds the response to send back to the browser, let’s take a look at how the browser handles the response.
+6. Browser renders the content
+Once the browser has received the response from the server, it inspects the response headers for information on how to render the resource.
+The first GET request returns HTML, the structure of the page. But if you inspect the HTML of the page (or any web page) with your browser’s dev tools, you’ll see it references other JavaScript, CSS, image resources and requests additional data in order to render the web page as designed.
+As the browser is parsing and rendering the HTML, it is making additional requests to get JavaScript, CSS, images, and data. 
+Conclusion
+Now you have got it! You've just known what happens when you type google.com by following these above 6 steps.
+Knowing what happens when you type google.com can help you figure out what goes wrong when you get unexpected result and how to know if you are secured when you are on a website. It can also help understand what is in behind the process of every time you type a URL and click on the URL.
