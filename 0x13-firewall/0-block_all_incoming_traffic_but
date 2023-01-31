@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #This file shows the commands i used to install ufw firewall
-# and setup a few ruls on web-01
+#and setup a few ruls on web-01
 sudo apt-get install ufw -y
 sudo sed -i 's/IPV6=.*/IPV6=yes/' /etc/default/ufw
 sudo ufw disable 
