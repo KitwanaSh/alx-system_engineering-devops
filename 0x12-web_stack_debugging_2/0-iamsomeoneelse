@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script show the data runnig in the whoami
+sudo -u "$1" whoami
