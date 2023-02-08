@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
-""" This script returns information about his/her TOTO
+#!/usr/bin/python3
+"""
+This script returns information about his/her TOTO
 list progress using a REST API
 """
 
@@ -19,7 +20,7 @@ if __name__ == "__main__":
                     if todo.get("completed")])
     name = output_name.get("name")
     print("Employee {} is done with tasks({}/{}):"
-            .format(name, all_todo, num_todo))
+          .format(name, all_todo, num_todo))
     for todo in output_todo:
         if (todo.get("completed")):
             print("\t {}".format(todo.get("title")))
