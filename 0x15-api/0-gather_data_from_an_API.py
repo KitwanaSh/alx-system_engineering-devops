@@ -8,8 +8,8 @@ list progress using a REST API
 from requests import get
 from sys import argv
 
-if __name__ == "__main__":
-    main_url = "https://jsonplaceholder.typicode.com"
+if __name__ == '__main__':
+    main_url = 'https://jsonplaceholder.typicode.com'
     parm_todo = main_url + "/user/{}/todos".format(argv[1])
     parm_name = main_url + "/users/{}".format(argv[1])
     output_todo = get(parm_todo).json()
