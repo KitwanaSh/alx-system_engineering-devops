@@ -1,0 +1,134 @@
+[34m
+* Datadog Agent 7 install script v1.15.0
+[0m
+[34m
+* Installing apt-transport-https, curl and gnupg
+[0m
+Hit:1 https://download.docker.com/linux/ubuntu focal InRelease
+Hit:2 https://deb.nodesource.com/node_14.x jammy InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu jammy InRelease
+Hit:4 http://repo.mysql.com/apt/ubuntu bionic InRelease
+Hit:5 http://security.ubuntu.com/ubuntu jammy-security InRelease
+Hit:6 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+Hit:7 https://ppa.launchpadcontent.net/deadsnakes/ppa/ubuntu jammy InRelease
+Hit:8 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+Ign:9 https://ppa.launchpadcontent.net/vbernat/haproxy-1.8/ubuntu jammy InRelease
+Err:10 https://ppa.launchpadcontent.net/vbernat/haproxy-1.8/ubuntu jammy Release
+  404  Not Found [IP: 185.125.190.52 443]
+Reading package lists...
+E: The repository 'https://ppa.launchpadcontent.net/vbernat/haproxy-1.8/ubuntu jammy Release' does not have a Release file.
+W: https://download.docker.com/linux/ubuntu/dists/focal/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+W: http://repo.mysql.com/apt/ubuntu/dists/bionic/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+W: Target Packages (mysql-5.7/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target Packages (mysql-5.7/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target Translations (mysql-5.7/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target CNF (mysql-5.7/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target CNF (mysql-5.7/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target Packages (mysql-5.7/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target Packages (mysql-5.7/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target Translations (mysql-5.7/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target CNF (mysql-5.7/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target CNF (mysql-5.7/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+[31m'apt-get update' failed, the script will not install the latest version of apt-transport-https.[0m
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version (7.81.0-1ubuntu1.8).
+gnupg is already the newest version (2.2.27-3ubuntu2.1).
+apt-transport-https is already the newest version (2.4.8).
+The following packages were automatically installed and are no longer required:
+  libflashrom1 libftdi1-2
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 75 not upgraded.
+[34m
+* Installing APT package sources for Datadog
+[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  6226  100  6226    0     0   3304      0  0:00:01  0:00:01 --:--:--  3306
+gpg: directory '/root/.gnupg' created
+gpg: /root/.gnupg/trustdb.gpg: trustdb created
+gpg: key 32637D44F14F620E: public key "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  6226  100  6226    0     0   7016      0 --:--:-- --:--:-- --:--:--  7027
+gpg: key 32637D44F14F620E: "Datadog, Inc. Master key (2020-09-08) <package+masterkey@datadoghq.com>" not changed
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  9001  100  9001    0     0  14350      0 --:--:-- --:--:-- --:--:-- 14355
+gpg: key D3A80E30382E94DE: public key "Datadog, Inc <package@datadoghq.com>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+[34m
+* Installing the Datadog Agent package
+[0m
+Ign:1 https://apt.datadoghq.com stable InRelease
+Get:2 https://apt.datadoghq.com stable Release [14.3 kB]
+Get:3 https://apt.datadoghq.com stable Release.gpg [801 B]
+Get:4 https://apt.datadoghq.com stable/7 all Packages [964 B]
+Get:5 https://apt.datadoghq.com stable/7 amd64 Packages [31.9 kB]
+Fetched 47.9 kB in 3s (14.5 kB/s)
+Reading package lists...
+  [33mInstalling package(s): datadog-agent datadog-signing-keys
+[0m
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  libflashrom1 libftdi1-2
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  datadog-agent datadog-signing-keys
+0 upgraded, 2 newly installed, 0 to remove and 75 not upgraded.
+Need to get 317 MB of archives.
+After this operation, 1021 MB of additional disk space will be used.
+Get:1 https://apt.datadoghq.com stable/7 amd64 datadog-agent amd64 1:7.43.0-1 [317 MB]
+Get:2 https://apt.datadoghq.com stable/7 amd64 datadog-signing-keys all 1:1.2.0-1 [21.0 kB]
+Fetched 317 MB in 2min 37s (2023 kB/s)
+Selecting previously unselected package datadog-agent.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 58909 files and directories currently installed.)
+Preparing to unpack .../datadog-agent_1%3a7.43.0-1_amd64.deb ...
+Unpacking datadog-agent (1:7.43.0-1) ...
+Selecting previously unselected package datadog-signing-keys.
+Preparing to unpack .../datadog-signing-keys_1%3a1.2.0-1_all.deb ...
+Unpacking datadog-signing-keys (1:1.2.0-1) ...
+Setting up datadog-agent (1:7.43.0-1) ...
+Creating dd-agent group
+Creating dd-agent user
+Enabling service datadog-agent
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent.service → /lib/systemd/system/datadog-agent.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-process.service → /lib/systemd/system/datadog-agent-process.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-trace.service → /lib/systemd/system/datadog-agent-trace.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/datadog-agent-security.service → /lib/systemd/system/datadog-agent-security.service.
+No datadog.yaml file detected, not starting the agent
+Setting up datadog-signing-keys (1:1.2.0-1) ...
+E: Setting in Stop via TCSAFLUSH for stdin failed! - tcsetattr (4: Interrupted system call)
+W: --force-yes is deprecated, use one of the options starting with --allow instead.
+W: Target Packages (mysql-5.7/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target Packages (mysql-5.7/binary-all/Packages) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target Translations (mysql-5.7/i18n/Translation-en) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target CNF (mysql-5.7/cnf/Commands-amd64) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+W: Target CNF (mysql-5.7/cnf/Commands-all) is configured multiple times in /etc/apt/sources.list.d/mysql.list:5 and /etc/apt/sources.list.d/mysql.list:9
+E: Setting in Stop via TCSAFLUSH for stdin failed! - tcsetattr (4: Interrupted system call)
+[31mERROR
+Failed to install the datadog-agent package, sometimes it may be
+due to another APT source failing. See the logs above to
+determine the cause.
+If the cause is unclear, please contact Datadog support.
+*****
+
+It looks like you hit an issue when trying to install the Datadog Agent.
+
+Troubleshooting and basic usage information for the Datadog Agent are available at:
+
+    https://docs.datadoghq.com/agent/basic_agent_usage/
+[0m
+Do you want to send a failure report to Datadog (including ddagent-install.log)? (y/[n]) Enter an email address so we can follow up: OKA notification has been sent to Datadog with the contents of ddagent-install.log
+
+If you are still having problems, please send an email to support@datadoghq.com
+with the contents of ddagent-install.log and any information you think would be
+useful and we will do our very best to help you solve your problem.
